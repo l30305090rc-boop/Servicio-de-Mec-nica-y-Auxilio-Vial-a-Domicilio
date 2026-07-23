@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bermudez Auto Service | Cotización</title>
+    
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ===== FONT AWESOME ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- HEADER / NAVEGACIÓN                          -->
+    <!-- ============================================ -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-escudo">
+                    <div class="icon"><i class="fas fa-truck-monster"></i></div>
+                    <div class="text-main">BERMUDEZ <span>AUTO SERVICE</span></div>
+                </div>
+                <div class="logo-text">
+                    <div class="name">Bermudez <span>Auto Service</span></div>
+                    <div class="tagline">Maquinaria Pesada · Mantenimiento</div>
+                </div>
+            </a>
+            <nav>
+                <button class="menu-toggle" aria-label="Menú"><i class="fas fa-bars"></i></button>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- HERO / INICIO                                -->
+    <!-- ============================================ -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Mantenimiento y Reparación de <span>Maquinaria Pesada</span></h1>
+            <p>Selecciona los servicios que necesitas, agrégalos al carrito y cotiza todo junto.</p>
+            <a href="#servicios" class="btn"><i class="fas fa-arrow-down"></i> Ver Servicios</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SERVICIOS                                    -->
+    <!-- ============================================ -->
+    <section id="servicios" class="services-section">
+        <div class="section-title">
+            <h2>Nuestros Servicios</h2>
+            <p>Haz clic en cada servicio, selecciona las opciones y agrégalas al carrito</p>
+            <div class="line"></div>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- SERVICIO 1: GÓNDOLAS -->
+            <div class="service-card">
+                <div class="card-icon"><i class="fa-solid fa-truck-front"></i></div>
+                <h3>Góndolas y Remolques</h3>
+                <p class="description">Mantenimiento de frenos de aire, suspensión, ejes, alineación y soldadura pesada.</p>
+                <div class="click-hint">
+                    <span>Haz clic para ver opciones</span>
+                    <i class="fas fa-chevron-down arrow-indicator"></i>
+                </div>
+                <div class="dropdown-menu">
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Frenos de Aire</span>
+                            <span class="desc">Revisión y ajuste completo del sistema de frenos</span>
+                        </div>
+                        <div>
+                            <span class="price">$900</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Góndolas', 'Frenos de Aire', 900)">➕ Agregar</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Suspensión y Ejes</span>
+                            <span class="desc">Revisión, alineación y reparación de suspensión</span>
+                        </div>
+                        <div>
+                            <span class="price">$1,100</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Góndolas', 'Suspensión y Ejes', 1100)">➕ Agregar</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Soldadura Pesada</span>
+                            <span class="desc">Trabajos de soldadura de alta resistencia</span>
+                        </div>
+                        <div>
+                            <span class="price">$1,500</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Góndolas', 'Soldadura Pesada', 1500)">➕ Agregar</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Alineación de Remolques</span>
+                            <span class="desc">Alineación y balanceo de ejes y ruedas</span>
+                        </div>
+                        <div>
+                            <span class="price">$700</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Góndolas', 'Alineación de Remolques', 700)">➕ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICIO 2: MAQUINARIA PESADA -->
+            <div class="service-card">
+                <div class="card-icon"><i class="fa-solid fa-tractor"></i></div>
+                <h3>Maquinaria Pesada</h3>
+                <p class="description">Diagnóstico hidráulico, motores diésel, transmisiones y mantenimiento preventivo.</p>
+                <div class="click-hint">
+                    <span>Haz clic para ver opciones</span>
+                    <i class="fas fa-chevron-down arrow-indicator"></i>
+                </div>
+                <div class="dropdown-menu">
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Sistema Hidráulico</span>
+                            <span class="desc">Diagnóstico y reparación de sistemas hidráulicos</span>
+                        </div>
+                        <div>
+                            <span class="price">$1,800</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Maquinaria Pesada', 'Sistema Hidráulico', 1800)">➕ Agregar</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Motor Diésel</span>
+                            <span class="desc">Reparación y mantenimiento de motores diésel</span>
+                        </div>
+                        <div>
+                            <span class="price">$2,500</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Maquinaria Pesada', 'Motor Diésel', 2500)">➕ Agregar</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Transmisiones</span>
+                            <span class="desc">Reparación y mantenimiento de transmisiones</span>
+                        </div>
+                        <div>
+                            <span class="price">$1,450</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Maquinaria Pesada', 'Transmisiones', 1450)">➕ Agregar</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Mantenimiento Preventivo</span>
+                            <span class="desc">Revisión completa y mantenimiento programado</span>
+                        </div>
+                        <div>
+                            <span class="price">$600</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Maquinaria Pesada', 'Mantenimiento Preventivo', 600)">➕ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICIO 3: AUTOMOTRIZ -->
+            <div class="service-card">
+                <div class="card-icon"><i class="fa-solid fa-car-wrench"></i></div>
+                <h3>Servicio Automotriz y Flotas</h3>
+                <p class="description">Mecánica general, escáner computarizado, frenos y mantenimiento de flotas.</p>
+                <div class="click-hint">
+                    <span>Haz clic para ver opciones</span>
+                    <i class="fas fa-chevron-down arrow-indicator"></i>
+                </div>
+                <div class="dropdown-menu">
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Mecánica General</span>
+                            <span class="desc">Reparaciones generales y mantenimiento básico</span>
+                        </div>
+                        <div>
+                            <span class="price">$550</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Automotriz', 'Mecánica General', 550)">➕ Agregar</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Escáner Computarizado</span>
+                            <span class="desc">Diagnóstico electrónico y escaneo de fallas</span>
+                        </div>
+                        <div>
+                            <span class="price">$380</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Automotriz', 'Escáner Computarizado', 380)">➕ Agregar</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Frenos y Suspensión</span>
+                            <span class="desc">Reparación de frenos y sistema de suspensión</span>
+                        </div>
+                        <div>
+                            <span class="price">$300</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Automotriz', 'Frenos y Suspensión', 300)">➕ Agregar</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="info">
+                            <span class="name">🔧 Mantenimiento de Flotas</span>
+                            <span class="desc">Servicio completo para flotas de vehículos</span>
+                        </div>
+                        <div>
+                            <span class="price">$700</span>
+                            <button class="select-btn" onclick="agregarAlCarrito(this, 'Automotriz', 'Mantenimiento de Flotas', 700)">➕ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACTO                                     -->
+    <!-- ============================================ -->
+    <section id="contacto" style="background: var(--dark); color: #fff; padding: 80px 20px;">
+        <div class="contact-container" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:3rem;">
+            <div>
+                <h2 style="font-size:2.5rem; margin-bottom:1rem;">Contáctanos <span style="color:var(--primary);">Hoy</span></h2>
+                <p style="color:#94a3b8; margin-bottom:2rem;">¿Necesitas ayuda? Escríbenos y te responderemos lo antes posible.</p>
+                <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                    <i class="fa-solid fa-phone" style="color:var(--primary); font-size:1.5rem;"></i>
+                    <div><strong style="color:#fff;">Teléfono</strong><p style="color:#94a3b8;">+1 659229363</p></div>
+                </div>
+                <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                    <i class="fa-solid fa-envelope" style="color:var(--primary); font-size:1.5rem;"></i>
+                    <div><strong style="color:#fff;">Email</strong><p style="color:#94a3b8;">contacto@bermudezautoservicellc.com</p></div>
+                </div>
+                <div style="display:flex; align-items:center; gap:1.5rem;">
+                    <i class="fa-solid fa-clock" style="color:var(--primary); font-size:1.5rem;"></i>
+                    <div><strong style="color:#fff;">Horario</strong><p style="color:#94a3b8;">Lun-Vie: 8:00 AM - 6:00 PM</p></div>
+                </div>
+            </div>
+            <div>
+                <form id="contactForm" onsubmit="handleSubmit(event)" style="background:rgba(30,41,59,0.6); padding:2rem; border-radius:16px; backdrop-filter:blur(10px);">
+                    <div style="margin-bottom:1.2rem;">
+                        <label style="color:#cbd5e1; display:block; margin-bottom:0.4rem;">Nombre</label>
+                        <input type="text" required style="width:100%; padding:0.8rem; border-radius:10px; border:1px solid #334155; background:#0f172a; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:1.2rem;">
+                        <label style="color:#cbd5e1; display:block; margin-bottom:0.4rem;">Teléfono</label>
+                        <input type="tel" required style="width:100%; padding:0.8rem; border-radius:10px; border:1px solid #334155; background:#0f172a; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:1.2rem;">
+                        <label style="color:#cbd5e1; display:block; margin-bottom:0.4rem;">Mensaje</label>
+                        <textarea rows="3" required style="width:100%; padding:0.8rem; border-radius:10px; border:1px solid #334155; background:#0f172a; color:#fff; resize:vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width:100%;">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- BOTÓN CARRITO FLOTANTE                       -->
+    <!-- ============================================ -->
+    <button class="cart-float hidden" id="cartFloat" onclick="abrirCarrito()">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Mi Carrito</span>
+        <span class="badge" id="cartCount">0</span>
+    </button>
+
+    <!-- ============================================ -->
+    <!-- MODAL / VENTANA DEL CARRITO                  -->
+    <!-- ============================================ -->
+    <div class="modal-overlay" id="modalCarrito">
+        <div class="modal-content">
+            <button class="modal-close" onclick="cerrarCarrito()">&times;</button>
+            <h2>Mi <span>Carrito</span></h2>
+            <p style="color:#94a3b8; margin-bottom:0.5rem;">Servicios seleccionados</p>
+
+            <div class="cart-items" id="cartItems"></div>
+
+            <div class="cart-total">
+                <span class="total-label">Total estimado:</span>
+                <span class="total-amount" id="cartTotal">$0</span>
+            </div>
+
+            <hr style="border-color:#334155; margin:1.5rem 0;">
+
+            <form id="cotizacionForm">
+                <div class="form-group">
+                    <label>Nombre Completo *</label>
+                    <input type="text" id="cotizacionNombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Teléfono *</label>
+                    <input type="tel" id="cotizacionTelefono" placeholder="Número de contacto" required>
+                </div>
+                <div class="form-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" id="cotizacionEmail" placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Detalles adicionales</label>
+                    <textarea id="cotizacionDetalles" rows="3" placeholder="Describe lo que necesitas..."></textarea>
+                </div>
+                <button type="button" class="btn btn-submit" onclick="enviarCotizacion()">
+                    <i class="fab fa-whatsapp"></i> Enviar Cotización
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- WHATSAPP FLOTANTE                            -->
+    <!-- ============================================ -->
+    <a href="https://wa.me/1659229363" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Bermudez Auto Service LLC</h4>
+                <p>Comprometidos con tu seguridad y eficiencia</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Bermudez Auto Service LLC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT                                   -->
+    <!-- ============================================ -->
+    <script src="script.js"></script>
+
+</body>
+</html>
